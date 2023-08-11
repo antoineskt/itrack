@@ -15,7 +15,6 @@ const SectionHeader = styled.section`
 
 const DivImageContainer = styled.div`
   padding-left: 50px;
-  background: red;
 `;
 const Ul = styled.ul`
   display: flex;
@@ -31,7 +30,7 @@ export default function Navbar() {
   return (
     <SectionHeader>
       <DivImageContainer>
-        <Image src={logowhitefinal} alt='logo' />
+        <Image height='125' width='125' src={logowhitefinal} alt='logo' />
       </DivImageContainer>
       <Ul>
         <Li>Features</Li>

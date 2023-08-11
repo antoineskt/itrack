@@ -1,20 +1,53 @@
 import styled from 'styled-components';
+import { inter, andika, borel } from '../utils/fonts';
 
-const P = styled.p``;
+const SectionPresentation = styled.section`
+  margin: 0;
+  padding: 80px;
+`;
+
+const H1 = styled.h1`
+  font-size: 48px;
+`;
+
+const H2 = styled.h2`
+  font-family: 'borel';
+`;
 
 const AncerShopify = styled.a`
   background-color: black;
   display: flex;
   color: white;
   border-radius: 5px;
+  width: 250px;
+  height: 75px;
+  padding: 10px;
+  align-items: center;
 
   &:hover {
     filter: invert(100%);
   }
 `;
 
+const Div = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+`;
+
 const Svg = styled.svg`
   fill: white;
+`;
+
+const P1buttonshopify = styled.p`
+  margin: 0;
+  font-size: 0.8em;
+`;
+
+const P2buttonshopify = styled.p`
+  margin: 0;
+  font-size: 1.2em;
 `;
 
 export default function Presentation() {
@@ -30,15 +63,25 @@ export default function Presentation() {
   );
 
   return (
-    <div>
-      <h1>iTrack will increase your Shopify sales by at least 35%</h1>
+    <SectionPresentation>
+      <H1>iTrack will increase your Shopify sales by at least 35%</H1>
 
-      <p>eaze</p>
+      <H2>eaze</H2>
+      <h3 style={{ fontSize: '3em', padding: '50px' }}>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, natus.
+        Laboriosam impedit consequatur, laudantium fuga sapiente dolore in atque
+        excepturi assumenda dignissimos praesentium itaque explicabo quis ex
+        aliquid ratione cum facilis harum quam pariatur. Iste, deleniti minima,
+        aspernatur, fugit sapiente odit distinctio laudantium in possimus
+        mollitia quia eius aliquid fuga!
+      </h3>
       <AncerShopify href='https://apps.shopify.com/itrack?locale=fr'>
         {svgShopify}
-        <p>FIND IT ON THE</p>
-        <p>Shopify App store</p>
+        <Div>
+          <P1buttonshopify>FIND IT ON THE</P1buttonshopify>
+          <P2buttonshopify>Shopify App store</P2buttonshopify>
+        </Div>
       </AncerShopify>
-    </div>
+    </SectionPresentation>
   );
 }
