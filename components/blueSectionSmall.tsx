@@ -1,22 +1,44 @@
 import ReusableBackground from './Background';
+import styled from 'styled-components';
+
+const Section = styled.section`
+  display: flex;
+  color: white;
+`;
+
+const Div = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 50px;
+`;
+
+const H3 = styled.h3`
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+`;
 
 export default function BlueSectionSmall() {
   return (
     <ReusableBackground>
-      <section>
-        <div>
-          <h1>100+ users </h1>
-          <p>Join our 100 happy users and start watching money raining</p>
-        </div>
-        <div>
-          <h1>$100K+</h1>
-          <p>Join our 100 happy users and start watching money raining</p>
-        </div>
-        <div>
-          <h1>5 star reviews</h1>
-          <p>Join our 100 happy users and start watching money raining</p>
-        </div>
-      </section>
+      <Section>
+        <Div>
+          <h2>100+ users </h2>
+          <H3>Join our 100 happy users and start watching money raining</H3>
+        </Div>
+        <Div>
+          <h2>$100K+</h2>
+          <H3>Join our 100 happy users and start watching money raining</H3>
+        </Div>
+        <Div>
+          <h2>5 star reviews</h2>
+          <H3>Join our 100 happy users and start watching money raining</H3>
+        </Div>
+      </Section>
     </ReusableBackground>
   );
 }

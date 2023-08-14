@@ -2,7 +2,7 @@ import { Inter } from 'next/font/google';
 
 export const inter = Inter({
   subsets: ['latin'],
-  weight: ['900'],
+  weight: ['700'],
   style: ['normal'],
 });
 

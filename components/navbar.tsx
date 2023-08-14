@@ -4,7 +4,7 @@ import ReusableBackground from './Background';
 
 const SectionHeader = styled.section`
   display: flex;
-  height: 60px;
+  height: 80px;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -22,7 +22,7 @@ const Ul = styled.ul`
 
 const Li = styled.li`
   padding-right: 2em;
-  font-size: 1em;
+  font-size: 1.3em;
 `;
 
 export default function Navbar() {

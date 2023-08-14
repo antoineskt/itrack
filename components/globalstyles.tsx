@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.colors.primary};
     padding: 0;
     margin: 0;
-    font-family: ${inter.style};
+    font-family: ${interSmall.style};
   }
 
   a {
@@ -19,11 +19,28 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
 
-  h2, h3 {
-    font-family: ${interSmall};
+  h1 {
+    letter-spacing: -2px;
+    line-height: 1.2;
+    font-size: 4em;
+  }
+
+  h2 {
+    letter-spacing: -2px;
+    line-height: 1.2;
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+  }
+
+  h3, p {
+    font-family: ${interSmall.style};
     color: #353535;
     line-height: 1.8;
     letter-spacing: 0;
+    font-size: 1.3rem;
+    padding: 0;
+    margin: 0;
   }
   
 `;
