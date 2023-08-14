@@ -1,4 +1,4 @@
-import { Inter, Andika, Borel } from 'next/font/google';
+import { Inter } from 'next/font/google';
 
 export const inter = Inter({
   subsets: ['latin'],
@@ -6,13 +6,7 @@ export const inter = Inter({
   style: ['normal'],
 });
 
-export const andika = Andika({
+export const interSmall = Inter({
   subsets: ['latin'],
-  weight: ['700'],
-  style: ['italic'],
-});
-
-export const borel = Borel({
-  subsets: ['latin'],
-  weight: ['400'],
+  weight: ['500'],
 });

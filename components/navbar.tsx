@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import styled from 'styled-components';
+import ReusableBackground from './Background';
 
 const SectionHeader = styled.section`
   display: flex;
-  background-color: black;
-  height: 120px;
+  height: 60px;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -22,21 +22,23 @@ const Ul = styled.ul`
 
 const Li = styled.li`
   padding-right: 2em;
-  font-size: 2em;
+  font-size: 1em;
 `;
 
 export default function Navbar() {
   return (
-    <SectionHeader>
-      <DivImageContainer>
-        <Image height='125' width='125' src='/logowhitefinal.png' alt='logo' />
-      </DivImageContainer>
-      <Ul>
-        <Li>Features</Li>
-        <Li>Ressources</Li>
-        <Li>Pricing</Li>
-        <Li>Contact</Li>
-      </Ul>
-    </SectionHeader>
+    <ReusableBackground>
+      <SectionHeader>
+        <DivImageContainer>
+          <Image height='62' width='62' src='/logowhitefinal.png' alt='logo' />
+        </DivImageContainer>
+        <Ul>
+          <Li>Features</Li>
+          <Li>Ressources</Li>
+          <Li>Pricing</Li>
+          <Li>Contact</Li>
+        </Ul>
+      </SectionHeader>
+    </ReusableBackground>
   );
 }

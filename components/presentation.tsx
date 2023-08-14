@@ -1,19 +1,19 @@
 import styled from 'styled-components';
-
 import Image from 'next/image';
 
 const SectionPresentation = styled.section`
   margin: 0;
-  padding: 80px;
+  padding-left: 50px;
+  padding-bottom: 50px;
   display: flex;
 `;
 
 const H1 = styled.h1`
-  font-size: 5em;
+  font-size: 3em;
 `;
 
 const H2 = styled.h2`
-  font-size: 2em;
+  padding-bottom: 30px;
 `;
 
 const AncerShopify = styled.a`
@@ -21,8 +21,8 @@ const AncerShopify = styled.a`
   display: flex;
   color: white;
   border-radius: 5px;
-  width: 500px;
-  height: 148px;
+  width: 400px;
+  height: 118px;
   padding: 20px;
   align-items: center;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
@@ -32,7 +32,7 @@ const AncerShopify = styled.a`
   }
 `;
 
-const Div = styled.div`
+const DivButtonShopify = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -45,15 +45,13 @@ const Svg = styled.svg`
 
 const P1buttonshopify = styled.p`
   margin: 0;
-  font-size: 1.2em;
+  font-size: 1em;
 `;
 
 const P2buttonshopify = styled.p`
   margin: 0;
-  font-size: 2em;
+  font-size: 1.7em;
 `;
-
-const DivRight = styled.div``;
 
 const DivLeft = styled.div``;
 export default function Presentation() {
@@ -74,20 +72,21 @@ export default function Presentation() {
         <H1>iTrack will increase your customer satisfaction by at least 35%</H1>
 
         <H2>
-          Itrack is the must-have upsell app for all Shopify merchants. Create
-          pre-purchase upsells, post-purchase upsells, thank you page offers &
-          boost sales by at least 35%.
+          Itrack is the must-have upsell app for all Shopify merchants. <br />{' '}
+          Create pre-purchase upsells, post-purchase upsells, <br />
+          thank you page offers & boost sales by
+          <br /> at least 35%.
         </H2>
 
         <AncerShopify href='https://apps.shopify.com/itrack?locale=fr'>
           {svgShopify}
-          <Div>
+          <DivButtonShopify>
             <P1buttonshopify>FIND IT ON THE</P1buttonshopify>
             <P2buttonshopify>Shopify App store</P2buttonshopify>
-          </Div>
+          </DivButtonShopify>
         </AncerShopify>
       </DivLeft>
-      <Image src='/mockup.png' alt='svg dashboard' width={1920} height={1290} />
+      <Image src='/mockupok.png' alt='svg dashboard' width={941} height={632} />
     </SectionPresentation>
   );
 }
