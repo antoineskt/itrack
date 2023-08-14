@@ -10,7 +10,7 @@ const SectionPresentation = styled.section`
 `;
 
 const H1 = styled.h1`
-  font-size: 48px;
+  font-size: 5em;
 `;
 
 const H2 = styled.h2`
@@ -22,8 +22,8 @@ const AncerShopify = styled.a`
   display: flex;
   color: white;
   border-radius: 5px;
-  width: 250px;
-  height: 75px;
+  width: 375px;
+  height: 112.5px;
   padding: 10px;
   align-items: center;
 
@@ -36,7 +36,7 @@ const Div = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 0;
+  padding: 15px;
 `;
 
 const Svg = styled.svg`
@@ -45,12 +45,12 @@ const Svg = styled.svg`
 
 const P1buttonshopify = styled.p`
   margin: 0;
-  font-size: 0.8em;
+  font-size: 1em;
 `;
 
 const P2buttonshopify = styled.p`
   margin: 0;
-  font-size: 1.2em;
+  font-size: 1.6em;
 `;
 
 const DivRight = styled.div``;
@@ -71,10 +71,10 @@ export default function Presentation() {
   return (
     <SectionPresentation>
       <DivLeft>
-        <H1>iTrack will increase your Shopify sales by at least 35%</H1>
+        <H1>iTrack will increase your customer satisfaction by at least 35%</H1>
 
         <H2>
-          Cart X is the must-have upsell app for all Shopify merchants. Create
+          Itrack is the must-have upsell app for all Shopify merchants. Create
           pre-purchase upsells, post-purchase upsells, thank you page offers &
           boost sales by at least 35%.
         </H2>

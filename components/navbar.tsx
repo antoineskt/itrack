@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-import logowhitefinal from './logowhitefinal.png';
 
 const SectionHeader = styled.section`
   display: flex;
@@ -30,7 +29,7 @@ export default function Navbar() {
   return (
     <SectionHeader>
       <DivImageContainer>
-        <Image height='125' width='125' src={logowhitefinal} alt='logo' />
+        <Image height='125' width='125' src='/logowhitefinal.png' alt='logo' />
       </DivImageContainer>
       <Ul>
         <Li>Features</Li>
