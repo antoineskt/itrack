@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { inter, andika, borel } from '../utils/fonts';
 
 import Image from 'next/image';
 
@@ -14,7 +13,7 @@ const H1 = styled.h1`
 `;
 
 const H2 = styled.h2`
-  font-family: 'borel';
+  font-size: 2em;
 `;
 
 const AncerShopify = styled.a`
@@ -22,10 +21,11 @@ const AncerShopify = styled.a`
   display: flex;
   color: white;
   border-radius: 5px;
-  width: 375px;
-  height: 112.5px;
-  padding: 10px;
+  width: 500px;
+  height: 148px;
+  padding: 20px;
   align-items: center;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 
   &:hover {
     filter: invert(100%);
@@ -36,7 +36,7 @@ const Div = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 15px;
+  padding: 20px;
 `;
 
 const Svg = styled.svg`
@@ -45,12 +45,12 @@ const Svg = styled.svg`
 
 const P1buttonshopify = styled.p`
   margin: 0;
-  font-size: 1em;
+  font-size: 1.2em;
 `;
 
 const P2buttonshopify = styled.p`
   margin: 0;
-  font-size: 1.6em;
+  font-size: 2em;
 `;
 
 const DivRight = styled.div``;
