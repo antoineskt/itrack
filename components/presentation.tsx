@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 import { inter, andika, borel } from '../utils/fonts';
 
+import Image from 'next/image';
+
 const SectionPresentation = styled.section`
   margin: 0;
   padding: 80px;
+  display: flex;
 `;
 
 const H1 = styled.h1`
@@ -50,6 +53,9 @@ const P2buttonshopify = styled.p`
   font-size: 1.2em;
 `;
 
+const DivRight = styled.div``;
+
+const DivLeft = styled.div``;
 export default function Presentation() {
   const svgShopify = (
     <Svg
@@ -64,24 +70,24 @@ export default function Presentation() {
 
   return (
     <SectionPresentation>
-      <H1>iTrack will increase your Shopify sales by at least 35%</H1>
+      <DivLeft>
+        <H1>iTrack will increase your Shopify sales by at least 35%</H1>
 
-      <H2>eaze</H2>
-      <h3 style={{ fontSize: '3em', padding: '50px' }}>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, natus.
-        Laboriosam impedit consequatur, laudantium fuga sapiente dolore in atque
-        excepturi assumenda dignissimos praesentium itaque explicabo quis ex
-        aliquid ratione cum facilis harum quam pariatur. Iste, deleniti minima,
-        aspernatur, fugit sapiente odit distinctio laudantium in possimus
-        mollitia quia eius aliquid fuga!
-      </h3>
-      <AncerShopify href='https://apps.shopify.com/itrack?locale=fr'>
-        {svgShopify}
-        <Div>
-          <P1buttonshopify>FIND IT ON THE</P1buttonshopify>
-          <P2buttonshopify>Shopify App store</P2buttonshopify>
-        </Div>
-      </AncerShopify>
+        <H2>
+          Cart X is the must-have upsell app for all Shopify merchants. Create
+          pre-purchase upsells, post-purchase upsells, thank you page offers &
+          boost sales by at least 35%.
+        </H2>
+
+        <AncerShopify href='https://apps.shopify.com/itrack?locale=fr'>
+          {svgShopify}
+          <Div>
+            <P1buttonshopify>FIND IT ON THE</P1buttonshopify>
+            <P2buttonshopify>Shopify App store</P2buttonshopify>
+          </Div>
+        </AncerShopify>
+      </DivLeft>
+      <Image src='/mockup.png' alt='svg dashboard' width={1920} height={1290} />
     </SectionPresentation>
   );
 }
