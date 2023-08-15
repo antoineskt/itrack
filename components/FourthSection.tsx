@@ -23,7 +23,7 @@ const Title = styled.h2`
 `;
 function FourthSection() {
   return (
-    <Section>
+    <Section id='fourthSection'>
       <Title>Les tarifs</Title>
       <Container>
         {priceData.map(({ title, description, price }) => (
