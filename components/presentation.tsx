@@ -23,9 +23,9 @@ export default function Presentation() {
         <H1>iTrack will increase your customer satisfaction by at least 35%</H1>
 
         <H3>
-          Itrack is the must-have upsell app for all Shopify merchants. <br />{' '}
-          Create pre-purchase upsells, post-purchase upsells, <br />
-          thank you page offers & boost sales by
+          iTrack is the must-have tracking app for all Shopify merchants. <br />{' '}
+          Create customing delivery, post-purchase upsells, <br />
+          thank you page offers & boost customer satisfaction by
           <br /> at least 35%.
         </H3>
 

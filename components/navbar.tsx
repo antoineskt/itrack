@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-import ReusableBackground from './Background';
+import ReusableBackground from './background';
 
 const SectionHeader = styled.section`
   display: flex;

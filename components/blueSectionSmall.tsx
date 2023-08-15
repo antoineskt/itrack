@@ -1,4 +1,4 @@
-import ReusableBackground from './Background';
+import ReusableBackground from './background';
 import styled from 'styled-components';
 
 const Section = styled.section`
@@ -28,7 +28,7 @@ export default function BlueSectionSmall() {
       <Section>
         <Div>
           <h2>100+ users </h2>
-          <H3>Join our 100 happy users and start watching money raining</H3>
+          <H3>Join our 100 happy users and start watching happy customer</H3>
         </Div>
         <Div>
           <h2>$100K+</h2>
