@@ -18,6 +18,7 @@ const Container = styled.div`
 const Title = styled.h2`
   text-align: center;
   text-transform: uppercase;
+  font-size: 3em;
   margin: 1em;
 `;
 function FourthSection() {
