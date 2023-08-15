@@ -27,16 +27,18 @@ export default function BlueSectionSmall() {
     <ReusableBackground>
       <Section>
         <Div>
-          <h2>100+ users </h2>
-          <H3>Join our 100 happy users and start watching happy customer</H3>
+          <h2>1000+ users </h2>
+          <H3>Join our 1000 happy users and start watching happy customer</H3>
         </Div>
         <Div>
-          <h2>$100K+</h2>
-          <H3>Join our 100 happy users and start watching money raining</H3>
+          <h2>+35% satisfied</h2>
+          <H3>Increase instantly your customer satisfaction by 35%</H3>
         </Div>
         <Div>
           <h2>5 star reviews</h2>
-          <H3>Join our 100 happy users and start watching money raining</H3>
+          <H3>
+            iTrack has received a flawless 5-star rating from all of our users.
+          </H3>
         </Div>
       </Section>
     </ReusableBackground>

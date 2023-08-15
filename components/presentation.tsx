@@ -24,9 +24,8 @@ export default function Presentation() {
 
         <H3>
           iTrack is the must-have tracking app for all Shopify merchants. <br />{' '}
-          Create customing delivery, post-purchase upsells, <br />
-          thank you page offers & boost customer satisfaction by
-          <br /> at least 35%.
+          Create customing delivery and solve after-sales questions about
+          delivery times.
         </H3>
 
         <ButtonShopify />
