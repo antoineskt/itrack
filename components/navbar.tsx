@@ -23,6 +23,7 @@ const Ul = styled.ul`
 const Li = styled.li`
   padding-right: 2em;
   font-size: 1.3em;
+  color: white;
 `;
 
 export default function Navbar() {

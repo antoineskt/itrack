@@ -33,7 +33,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
 
-  h3, p {
+  h3, p, li {
     font-family: ${interSmall.style};
     color: #353535;
     line-height: 1.8;
