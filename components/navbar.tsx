@@ -36,7 +36,7 @@ export default function Navbar() {
         <Nav>
           <A href='#secondSection'>Features</A>
           <A href='#thirdSection'>Ressources</A>
-          <A>Pricing</A>
+          <A href='#fourthSection'>Pricing</A>
           <A>Contact</A>
         </Nav>
       </Header>
