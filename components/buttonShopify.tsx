@@ -20,19 +20,24 @@ const DivButtonShopify = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  padding-left: 10px;
 `;
 
 const P1buttonshopify = styled.p`
   margin: 0;
   font-size: 1em;
   color: white;
+  padding: 0;
+  line-height: 1.2;
 `;
 
 const P2buttonshopify = styled.p`
   margin: 0;
   font-size: 1.7em;
   color: white;
+  padding: 0;
+  line-height: 1.2;
 `;
 
 const Svg = styled.svg`

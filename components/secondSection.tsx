@@ -46,7 +46,7 @@ export default function secondSection() {
     </svg>
   );
   return (
-    <section>
+    <section id='secondSection'>
       <H1>
         Save time and relieve your
         <br /> customer service

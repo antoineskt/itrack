@@ -2,7 +2,7 @@ import Image from 'next/image';
 import styled from 'styled-components';
 import ReusableBackground from './background';
 
-const SectionHeader = styled.section`
+const Header = styled.header`
   display: flex;
   height: 80px;
   width: 100%;
@@ -15,12 +15,12 @@ const SectionHeader = styled.section`
 const DivImageContainer = styled.div`
   padding-left: 50px;
 `;
-const Ul = styled.ul`
+const Nav = styled.nav`
   display: flex;
   list-style-type: none;
 `;
 
-const Li = styled.li`
+const A = styled.a`
   padding-right: 2em;
   font-size: 1.3em;
   color: white;
@@ -29,17 +29,17 @@ const Li = styled.li`
 export default function Navbar() {
   return (
     <ReusableBackground>
-      <SectionHeader>
+      <Header>
         <DivImageContainer>
           <Image height='62' width='62' src='/logowhitefinal.png' alt='logo' />
         </DivImageContainer>
-        <Ul>
-          <Li>Features</Li>
-          <Li>Ressources</Li>
-          <Li>Pricing</Li>
-          <Li>Contact</Li>
-        </Ul>
-      </SectionHeader>
+        <Nav>
+          <A href='#secondSection'>Features</A>
+          <A href='#thirdSection'>Ressources</A>
+          <A>Pricing</A>
+          <A>Contact</A>
+        </Nav>
+      </Header>
     </ReusableBackground>
   );
 }
