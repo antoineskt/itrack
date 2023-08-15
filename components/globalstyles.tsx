@@ -65,8 +65,13 @@ table {
   h1 {
     letter-spacing: -2px;
     line-height: 1.2;
-    font-size: 4em;
-  }
+    font-size: 3.5em;
+    @media screen and (max-width: 900px) {
+      font-size: 2em;
+    }
+      
+    } 
+  
 
   h2 {
     letter-spacing: -2px;
@@ -74,6 +79,9 @@ table {
     font-size: 2.5em;
     margin: 0;
     padding: 0;
+    @media screen and (max-width: 900px) {
+      font-size: 1.5em;
+    }
   }
 
   h3, p, li, a {
@@ -85,6 +93,9 @@ table {
     padding: 0;
     margin: 0;
     text-decoration: none;
+    @media screen and (max-width: 900px) {
+      font-size: 1rem;
+    }
   }
   
 `;

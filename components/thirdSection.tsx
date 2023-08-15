@@ -18,12 +18,10 @@ export default function ThirdSection() {
           <Image
             src={itrackhdThree}
             alt='double screen'
-            sizes='100vw'
-            // Make the image display full width
+            sizes='50vw'
             style={{
-              width: '40%',
+              width: 'auto',
               height: 'auto',
-              padding: 50,
             }}
           />
 
@@ -60,6 +58,10 @@ const Div = styled.div`
   padding-top: 0px;
   color: white;
   display: flex;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    padding: 10px;
+  }
 `;
 
 const H3 = styled.h3`

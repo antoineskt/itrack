@@ -23,6 +23,9 @@ const Title = styled.h3`
 const Price = styled.p`
   font-size: 2em;
   font-weight: 900;
+  @media screen and (max-width: 900px) {
+    font-size: 1em;
+  }
 `;
 
 const DescriptionContainer = styled.ul`

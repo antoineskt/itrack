@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import styled from 'styled-components';
 import ButtonValue from './buttonValue';
+import doubleScreen from '../public/doubleScreen.png';
 export default function secondSection() {
   const paintingSvg = (
     <svg
@@ -70,10 +71,13 @@ export default function secondSection() {
           </ButtonValue>
         </div>
         <Image
-          src='/doubleScreen.png'
+          src={doubleScreen}
           alt='Double ecran iphone'
-          width={673}
-          height={720}
+          sizes='50vw'
+          style={{
+            width: 'auto',
+            height: 'auto',
+          }}
         />
       </Div>
     </section>
@@ -84,4 +88,7 @@ const H1 = styled.h1`
 `;
 const Div = styled.div`
   display: flex;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
 `;

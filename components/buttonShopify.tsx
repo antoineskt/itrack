@@ -14,6 +14,10 @@ const AncerShopify = styled.a`
   &:hover {
     filter: invert(100%);
   }
+  @media screen and (max-width: 900px) {
+    width: 200px;
+    height: 60px;
+  }
 `;
 
 const DivButtonShopify = styled.div`
@@ -30,6 +34,9 @@ const P1buttonshopify = styled.p`
   color: white;
   padding: 0;
   line-height: 1.2;
+  @media screen and (max-width: 900px) {
+    font-size: 0.7em;
+  }
 `;
 
 const P2buttonshopify = styled.p`
@@ -38,6 +45,9 @@ const P2buttonshopify = styled.p`
   color: white;
   padding: 0;
   line-height: 1.2;
+  @media screen and (max-width: 900px) {
+    font-size: 1em;
+  }
 `;
 
 const Svg = styled.svg`

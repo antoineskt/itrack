@@ -14,17 +14,23 @@ const Container = styled.div`
   margin: 0 auto;
   padding: 0 2em;
   opacity: 1;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
 `;
 const Title = styled.h2`
   text-align: center;
   text-transform: uppercase;
   font-size: 3em;
   margin: 1em;
+  @media screen and (max-width: 900px) {
+    font-size: 2em;
+  }
 `;
 function FourthSection() {
   return (
     <Section id='fourthSection'>
-      <Title>Les tarifs</Title>
+      <Title>Pricing</Title>
       <Container>
         {priceData.map(({ title, description, price }) => (
           <CardRate

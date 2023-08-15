@@ -4,6 +4,9 @@ import styled from 'styled-components';
 const Section = styled.section`
   display: flex;
   color: white;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
 `;
 
 const Div = styled.div`
@@ -14,6 +17,8 @@ const Div = styled.div`
   color: white;
   text-align: center;
   padding: 50px;
+  @media screen and (max-width: 900px) {
+  }
 `;
 
 const H3 = styled.h3`
