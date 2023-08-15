@@ -4,6 +4,7 @@ import BlueSectionSmall from '../components/blueSectionSmall';
 import SecondSection from '../components/secondSection';
 import ThirdSection from '../components/thirdSection';
 import FourthSection from '../components/FourthSection';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <SecondSection />
       <ThirdSection />
       <FourthSection />
+      <Footer />
     </div>
   );
 }
