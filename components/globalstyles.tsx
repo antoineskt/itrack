@@ -33,7 +33,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
 
-  h3, p, li {
+  h3, p, li, a {
     font-family: ${interSmall.style};
     color: #353535;
     line-height: 1.8;
@@ -41,6 +41,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.3rem;
     padding: 0;
     margin: 0;
+    text-decoration: none;
   }
   
 `;
