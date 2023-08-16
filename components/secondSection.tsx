@@ -85,6 +85,10 @@ export default function secondSection() {
 }
 const H1 = styled.h1`
   text-align: center;
+  padding-top: 40px;
+  @media screen and (max-width: 900px) {
+    padding-top: 40px;
+  }
 `;
 const Div = styled.div`
   display: flex;

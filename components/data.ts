@@ -7,7 +7,7 @@ export type PriceDataType = {
 export const priceData: PriceDataType[] = [
   {
     title: 'Free',
-    price: 'Gratuite',
+    price: 'Free',
     description: [
       'First 5,000 page views',
       'No coding required',
@@ -19,7 +19,7 @@ export const priceData: PriceDataType[] = [
   },
   {
     title: 'GROWTH PLAN',
-    price: '$4.99/mois',
+    price: '$4.99/month',
     description: [
       '50,000 page views per month',
       'Integrates with any themes',
@@ -31,7 +31,7 @@ export const priceData: PriceDataType[] = [
   },
   {
     title: 'PRO PLAN',
-    price: '$9.99/mois',
+    price: '$9.99/month',
     description: [
       'Unlimited views',
       'Integrates with any themes',

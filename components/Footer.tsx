@@ -13,7 +13,9 @@ const FooterContainer = styled.footer`
   gap: 1em;
   color: white;
   font-size: 1em;
-  font-family: 'Georgia';
+  @media screen and (max-width: 900px) {
+    font-size: 0.8em;
+  }
 `;
 
 const GithubLink = ({ link, author }: { link: string; author: string }) => {
@@ -21,7 +23,7 @@ const GithubLink = ({ link, author }: { link: string; author: string }) => {
     <Link
       style={{
         color: 'white',
-        fontSize: '1.5em',
+        fontSize: '1em',
       }}
       target='_blank'
       href={link}
@@ -34,11 +36,11 @@ const GithubLink = ({ link, author }: { link: string; author: string }) => {
 function Footer() {
   return (
     <ReusableBackground>
-      <FooterContainer>
+      <FooterContainer id='footer'>
         <h2>iTrack</h2>
-        <ButtonShopify />
-        <strong>
-          © 2023 - iTrack . All Rights Reserved | Made by{' '}
+        <ButtonShopify />© 2023 - iTrack . All Rights Reserved |<br />
+        <div>
+          Made by{' '}
           <GithubLink
             author='@antoineskt'
             link='https://github.com/antoineskt'
@@ -48,7 +50,7 @@ function Footer() {
             author='@RaphGenius'
             link='https://github.com/RaphGenius'
           />
-        </strong>
+        </div>
       </FooterContainer>
     </ReusableBackground>
   );

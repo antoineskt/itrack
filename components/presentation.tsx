@@ -15,13 +15,20 @@ const SectionPresentation = styled.section`
   }
 `;
 
-const H1 = styled.h1``;
+const H1 = styled.h1`
+  padding-bottom: 30px;
+`;
 
 const H3 = styled.h3`
   padding-bottom: 30px;
 `;
 
 const DivLeft = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
   padding-top: 50px;
 `;
 export default function Presentation() {

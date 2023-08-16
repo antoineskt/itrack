@@ -39,12 +39,16 @@ const SvgMenu = styled.svg<{ $click: boolean }>`
 `;
 
 const A = styled.a`
+  &:hover {
+    color: hotpink;
+  }
   padding-right: 2em;
   font-size: 1.3em;
   color: white;
   @media screen and (max-width: 900px) {
-    padding-right: 0;
     font-size: 1em;
+    padding-right: 0;
+    padding-top: 10px;
   }
 `;
 
@@ -53,13 +57,18 @@ const NavMenuInBurger = styled.nav<{ $click: boolean }>`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+
   margin-top: 10px;
   padding-top: 100px;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 1em;
-  background: black;
+  background: rgb(3, 111, 136);
+  background: radial-gradient(
+    circle,
+    rgba(3, 111, 136, 1) 0%,
+    rgba(3, 3, 3, 1) 100%
+  );
   z-index: 10;
 
   @media screen and (min-width: 900px) {
@@ -83,7 +92,7 @@ export default function Navbar() {
           <A href='#secondSection'>Features</A>
           <A href='#thirdSection'>Ressources</A>
           <A href='#fourthSection'>Pricing</A>
-          <A>Contact</A>
+          <A href='#footer'>Contact</A>
         </Nav>
         <SvgMenu
           $click={click}
@@ -120,7 +129,7 @@ export default function Navbar() {
           <A href='#secondSection'>Features</A>
           <A href='#thirdSection'>Ressources</A>
           <A href='#fourthSection'>Pricing</A>
-          <A>Contact</A>
+          <A href='#footer'>Contact</A>
         </NavMenuInBurger>
       </Header>
     </ReusableBackground>

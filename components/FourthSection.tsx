@@ -5,6 +5,7 @@ import CardRate from './CardRate';
 
 const Section = styled.section`
   margin: 2em;
+  padding-bottom: 50px;
 `;
 
 const Container = styled.div`
@@ -20,7 +21,7 @@ const Container = styled.div`
 `;
 const Title = styled.h2`
   text-align: center;
-  text-transform: uppercase;
+
   font-size: 3em;
   margin: 1em;
   @media screen and (max-width: 900px) {
