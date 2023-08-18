@@ -55,6 +55,7 @@ table {
     padding: 0;
     margin: 0;
     font-family: ${interSmall.style};
+    overflow-x:hidden
   }
 
   a {

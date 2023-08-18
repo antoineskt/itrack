@@ -18,9 +18,9 @@ const CardContainer = styled.div`
 
 const Title = styled.h3`
   text-transform: uppercase;
-  color: rgb(183, 183, 183);
+  color: #757575;
 `;
-const Price = styled.p`
+const Price = styled.h4`
   font-size: 2em;
   font-weight: 900;
   @media screen and (max-width: 900px) {

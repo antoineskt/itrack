@@ -19,8 +19,9 @@ const H1 = styled.h1`
   padding-bottom: 30px;
 `;
 
-const H3 = styled.h3`
+const H2 = styled.h2`
   padding-bottom: 30px;
+  font-size: 2em;
 `;
 
 const DivLeft = styled.div`
@@ -37,11 +38,11 @@ export default function Presentation() {
       <DivLeft>
         <H1>iTrack will increase your customer satisfaction by at least 35%</H1>
 
-        <H3>
+        <H2>
           iTrack is the must-have tracking app for all Shopify merchants. <br />{' '}
           Create customing delivery and solve after-sales questions about
           delivery times.
-        </H3>
+        </H2>
 
         <ButtonShopify />
       </DivLeft>
