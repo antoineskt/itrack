@@ -24,6 +24,8 @@ const DivImageContainer = styled.div`
 `;
 const Nav = styled.nav`
   display: flex;
+  gap: 1em;
+  padding: 0 1em;
   list-style-type: none;
   @media screen and (max-width: 900px) {
     display: none;
@@ -40,16 +42,36 @@ const SvgMenu = styled.svg<{ $click: boolean }>`
 `;
 
 const A = styled.a`
-  &:hover {
-    color: hotpink;
-  }
-  padding-right: 2em;
+  position: relative;
   font-size: 1.3em;
   color: white;
+  width: fit-content;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5px;
+    background: white;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: 150ms cubic-bezier(0.22, 0.62, 0.44, 0.83) 50ms;
+  }
+  :hover::after {
+    transform: scaleX(1);
+  }
+  :hover {
+    opacity: 100%;
+  }
+
   @media screen and (max-width: 900px) {
     font-size: 1em;
     padding-right: 0;
     padding-top: 10px;
+    &::after {
+      display: none;
+    }
   }
 `;
 

@@ -51,6 +51,7 @@ table {
 
   html,
   body {
+    scroll-behavior: smooth;
     color: ${({ theme }) => theme.colors.primary};
     padding: 0;
     margin: 0;

@@ -12,7 +12,4 @@ const Div = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  &:hover {
-    filter: invert(100%);
-  }
 `;
