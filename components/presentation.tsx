@@ -76,6 +76,7 @@ export default function Presentation() {
 
       <Image
         src={mockup}
+        priority
         alt='svg dashboard'
         sizes='50vw'
         style={{
@@ -87,13 +88,7 @@ export default function Presentation() {
       <DivForResponsive>
         <H1>iTrack will increase your customer satisfaction by at least 35%</H1>
         <DivImageResponsive>
-          <Image
-            src={mockup}
-            alt='svg dashboard'
-            width={400}
-            height={400}
-            objectFit='cover'
-          />
+          <Image src={mockup} alt='svg dashboard' width={400} height={400} />
         </DivImageResponsive>
         <H2>
           iTrack is the must-have tracking app for all Shopify merchants. <br />{' '}

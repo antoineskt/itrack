@@ -1,8 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image';
 import styled from 'styled-components';
-import ButtonValue from './buttonValue';
 import doubleScreen from '../public/doubleScreen.png';
+import CardInformation from './CardInformation';
+import { InformationData } from '../type/data';
+
 export default function secondSection() {
   const paintingSvg = (
     <svg
@@ -46,6 +48,23 @@ export default function secondSection() {
       </g>
     </svg>
   );
+
+  const informationData: InformationData[] = [
+    {
+      logo: paintingSvg,
+      text: "Customize once and don't touch again",
+      primary: true,
+    },
+    {
+      logo: roadSvg,
+      text: 'No more complicate tracking number',
+    },
+    {
+      logo: relaxSvg,
+      text: 'Turns frustrated customers who are waiting for their delivery into calm ones',
+    },
+  ];
+
   return (
     <section id='secondSection'>
       <H1>
@@ -54,21 +73,9 @@ export default function secondSection() {
       </H1>
       <Div>
         <div>
-          <ButtonValue>
-            {paintingSvg}
-            <h3>Customize once and don't touch again</h3>
-          </ButtonValue>
-          <ButtonValue>
-            {roadSvg}
-            <h3>No more complicate tracking number</h3>
-          </ButtonValue>
-          <ButtonValue>
-            {relaxSvg}
-            <h3>
-              Turns frustrated customers who are waiting for their delivery into
-              calm ones
-            </h3>
-          </ButtonValue>
+          {informationData.map((card) => (
+            <CardInformation key={card.text} primary {...card} />
+          ))}
         </div>
         <Image
           src={doubleScreen}

@@ -4,6 +4,26 @@ import Image from 'next/image';
 import itrackhdThree from '../public/itrackhdThree.png';
 import styled from 'styled-components';
 import ButtonValueBlue from './buttonValueBlue';
+import { InformationData } from '../type/data';
+import CardInformation from './CardInformation';
+
+const data: InformationData[] = [
+  {
+    text: 'Comprehensible tracking information that provides only the essential details',
+  },
+  {
+    text: 'Say goodbye to messy international tracking numbers',
+  },
+  {
+    text: 'Comprehensible tracking information that provides only the essential details',
+  },
+  {
+    text: "Configured in just a few checks, there's no need to go back over it",
+  },
+  {
+    text: 'Save time to focus on your Business',
+  },
+];
 
 export default function ThirdSection() {
   return (
@@ -17,6 +37,7 @@ export default function ThirdSection() {
         <Div>
           <Image
             src={itrackhdThree}
+            priority={false}
             alt='double screen'
             sizes='50vw'
             style={{
@@ -26,26 +47,9 @@ export default function ThirdSection() {
           />
 
           <div>
-            <ButtonValueBlue>
-              <H3>
-                Comprehensible tracking information that provides only the
-                essential details
-              </H3>
-            </ButtonValueBlue>
-            <ButtonValueBlue>
-              {' '}
-              <H3>Say goodbye to messy international tracking numbers</H3>
-            </ButtonValueBlue>
-            <ButtonValueBlue>
-              <H3>
-                Configured in just a few checks, there's no need to go back over
-                it
-              </H3>
-            </ButtonValueBlue>
-            <ButtonValueBlue>
-              {' '}
-              <H3>Save time to focus on your Business</H3>
-            </ButtonValueBlue>
+            {data.map((card, i) => (
+              <CardInformation key={i} {...card} />
+            ))}
           </div>
         </Div>
       </Background>

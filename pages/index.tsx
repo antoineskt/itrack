@@ -6,6 +6,8 @@ import ThirdSection from '../components/thirdSection';
 import FourthSection from '../components/FourthSection';
 import Footer from '../components/Footer';
 
+const item = ['salutat zataz', 'zaeaz azeaze e ee', 'zeez zerezr zerzer'];
+
 export default function Home() {
   return (
     <div>
