@@ -13,10 +13,14 @@ const H1 = styled.h1`
 
 const H2 = styled.h2`
   padding-bottom: 30px;
-  font-size: 2em;
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #353535;
+  line-height: 1.8;
+  letter-spacing: 0;
   @media screen and (max-width: 900px) {
     font-size: 1.2em;
-    padding: 50px 50px 30px 50px;
+    padding: 50px 30px 30px 30px;
     letter-spacing: 0.4px;
   }
 `;
@@ -73,23 +77,24 @@ export default function Presentation() {
         <H1>iTrack will increase your customer satisfaction by at least 35%</H1>
 
         <H2>
-          iTrack is the must-have tracking app for all Shopify merchants. <br />{' '}
-          Create customing delivery and solve after-sales questions about
-          delivery times.
+          iTrack is the must-have tracking app for all Shopify merchants. Create
+          customing delivery and solve after-sales questions about delivery
+          times.
         </H2>
 
         <ButtonShopify />
       </DivLeft>
-
-      <Image
-        src={mockup}
-        alt='svg dashboard'
-        sizes='50vw'
-        style={{
-          width: 'auto',
-          height: 'auto',
-        }}
-      />
+      <DivImage>
+        <Image
+          src={mockup}
+          alt='svg dashboard'
+          sizes='50vw'
+          style={{
+            width: 'auto',
+            height: 'auto',
+          }}
+        />
+      </DivImage>
 
       <DivForResponsive>
         <H1>iTrack will increase your customer satisfaction by at least 35%</H1>
