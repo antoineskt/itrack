@@ -84,16 +84,17 @@ export default function Presentation() {
 
         <ButtonShopify />
       </DivLeft>
-
-      <Image
-        src={mockup}
-        alt='svg dashboard'
-        sizes='50vw'
-        style={{
-          width: 'auto',
-          height: 'auto',
-        }}
-      />
+      <DivImage>
+        <Image
+          src={mockup}
+          alt='svg dashboard'
+          sizes='50vw'
+          style={{
+            width: 'auto',
+            height: 'auto',
+          }}
+        />
+      </DivImage>
 
       <DivForResponsive>
         <H1>iTrack will increase your customer satisfaction by at least 35%</H1>
