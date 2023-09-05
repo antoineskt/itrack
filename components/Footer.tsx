@@ -24,6 +24,7 @@ const GithubLink = ({ link, author }: { link: string; author: string }) => {
       style={{
         color: 'white',
         fontSize: '1em',
+        textDecoration: 'underline',
       }}
       target='_blank'
       href={link}
