@@ -44,7 +44,7 @@ const H1 = styled.h1`
 const ContainerImage = styled.div`
   position: relative;
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   height: 500px;
   display: flex;
   justify-content: center;

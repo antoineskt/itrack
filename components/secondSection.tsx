@@ -51,7 +51,7 @@ export default function secondSection() {
 
   const ContainerImage = styled.div`
     width: 100%;
-    max-width: 100vh;
+    max-width: 500px;
     position: relative;
     display: flex;
     justify-content: center;
