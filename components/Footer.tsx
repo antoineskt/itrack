@@ -33,11 +33,15 @@ const GithubLink = ({ link, author }: { link: string; author: string }) => {
   );
 };
 
+const H2Footer = styled.h2`
+  letter-spacing: 5px;
+`;
+
 function Footer() {
   return (
     <ReusableBackground>
       <FooterContainer id='footer'>
-        <h2>iTrack</h2>
+        <H2Footer>iTrack</H2Footer>
         <ButtonShopify />© 2023 - iTrack . All Rights Reserved |<br />
         <div>
           Made by{' '}
