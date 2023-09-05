@@ -67,7 +67,10 @@ export default function ButtonShopify() {
   );
 
   return (
-    <AncerShopify href='https://apps.shopify.com/itrack?locale=fr'>
+    <AncerShopify
+      target='_blank'
+      href='https://apps.shopify.com/itrack?locale=fr'
+    >
       {svgShopify}
       <DivButtonShopify>
         <P1buttonshopify>FIND IT ON THE</P1buttonshopify>
