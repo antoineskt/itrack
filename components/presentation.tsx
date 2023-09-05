@@ -17,6 +17,7 @@ const H2 = styled.h2`
   @media screen and (max-width: 900px) {
     font-size: 1.2em;
     padding: 50px 50px 30px 50px;
+    letter-spacing: 0.4px;
   }
 `;
 
