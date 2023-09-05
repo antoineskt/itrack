@@ -3,7 +3,6 @@ import Background from './background';
 import Image from 'next/image';
 import itrackhdThree from '../public/itrackhdThree.png';
 import styled from 'styled-components';
-import ButtonValueBlue from './buttonValueBlue';
 import { InformationData } from '../type/data';
 import CardInformation from './CardInformation';
 
@@ -24,39 +23,6 @@ const data: InformationData[] = [
     text: 'Save time to focus on your Business',
   },
 ];
-
-export default function ThirdSection() {
-  return (
-    <section id='thirdSection'>
-      <Background>
-        <H1>
-          Custom Tracking. Once..
-          <br />
-          et voilà
-        </H1>
-        <Div>
-          <Image
-            src={itrackhdThree}
-            priority={false}
-            alt='double screen'
-            sizes='50vw'
-            style={{
-              width: 'auto',
-              height: 'auto',
-            }}
-          />
-
-          <div>
-            {data.map((card, i) => (
-              <CardInformation key={i} {...card} />
-            ))}
-          </div>
-        </Div>
-      </Background>
-    </section>
-  );
-}
-
 const Div = styled.div`
   padding: 50px;
   padding-top: 0px;
@@ -78,3 +44,37 @@ const H1 = styled.h1`
   color: white;
   padding-top: 50px;
 `;
+
+export default function ThirdSection() {
+  return (
+    <section id='thirdSection'>
+      <Background>
+        <H1>
+          Custom Tracking. Once..
+          <br />
+          et voilà
+        </H1>
+        <Div>
+          <div>
+            <Image
+              src={itrackhdThree}
+              priority={false}
+              alt='double screen'
+              sizes='50vw'
+              style={{
+                width: 'auto',
+                height: 'auto',
+              }}
+            />
+          </div>
+
+          <div>
+            {data.map((card, i) => (
+              <CardInformation key={i} {...card} />
+            ))}
+          </div>
+        </Div>
+      </Background>
+    </section>
+  );
+}

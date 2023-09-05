@@ -8,23 +8,26 @@ const Container = styled.div`
   padding: 2em;
   margin: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 1em;
   border-radius: 20px;
+  max-width: 800px;
+  @media screen and (max-width: 900px) {
+    justify-content: center;
+  }
 `;
 
 const LogoContainer = styled.div`
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
+  min-width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
 const Title = styled.h3`
-  font-size: 1.8em;
+  font-size: 1em;
   font-weight: bold;
   text-align: start;
   color: ${(props: { primary: string }) => props.primary};
