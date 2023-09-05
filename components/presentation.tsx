@@ -59,6 +59,12 @@ const DivImageResponsive = styled.div`
   width: 400px;
   height: 400px;
 `;
+
+const DivImage = styled.div`
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+`;
 export default function Presentation() {
   return (
     <SectionPresentation>
@@ -74,15 +80,17 @@ export default function Presentation() {
         <ButtonShopify />
       </DivLeft>
 
-      <Image
-        src={mockup}
-        alt='svg dashboard'
-        sizes='50vw'
-        style={{
-          width: 'auto',
-          height: 'auto',
-        }}
-      />
+      <DivImage>
+        <Image
+          src={mockup}
+          alt='svg dashboard'
+          sizes='50vw'
+          style={{
+            width: 'auto',
+            height: 'auto',
+          }}
+        />
+      </DivImage>
 
       <DivForResponsive>
         <H1>iTrack will increase your customer satisfaction by at least 35%</H1>
