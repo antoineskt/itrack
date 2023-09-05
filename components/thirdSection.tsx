@@ -28,15 +28,11 @@ const Div = styled.div`
   padding-top: 0px;
   color: white;
   display: flex;
+  align-items: center;
   @media screen and (max-width: 900px) {
     flex-direction: column;
     padding: 10px;
   }
-`;
-
-const H3 = styled.h3`
-  color: white;
-  font-size: 1.2em;
 `;
 
 const H1 = styled.h1`
@@ -45,36 +41,44 @@ const H1 = styled.h1`
   padding-top: 50px;
 `;
 
+const ContainerImage = styled.div`
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  @media screen and (max-width: 900px) {
+    max-width: 300px;
+    height: 300px;
+  }
+`;
 export default function ThirdSection() {
   return (
-    <section id='thirdSection'>
-      <Background>
+    <Background>
+      <section
+        id='thirdSection'
+        style={{ maxWidth: '1200px', margin: '0 auto' }}
+      >
         <H1>
           Custom Tracking. Once..
           <br />
           et voilà
         </H1>
         <Div>
-          <div>
-            <Image
-              src={itrackhdThree}
-              priority={false}
-              alt='double screen'
-              sizes='50vw'
-              style={{
-                width: 'auto',
-                height: 'auto',
-              }}
-            />
-          </div>
+          <ContainerImage>
+            <Image src={itrackhdThree} fill alt='double screen' />
+          </ContainerImage>
 
-          <div>
+          <div style={{ width: '100%' }}>
             {data.map((card, i) => (
               <CardInformation key={i} {...card} />
             ))}
           </div>
         </Div>
-      </Background>
-    </section>
+      </section>
+    </Background>
   );
 }

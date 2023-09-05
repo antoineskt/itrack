@@ -49,8 +49,26 @@ export default function secondSection() {
     },
   ];
 
+  const ContainerImage = styled.div`
+    width: 100%;
+    max-width: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    @media screen and (max-width: 900px) {
+      max-width: 300px;
+      height: 300px;
+      margin: 0 auto;
+    }
+  `;
+
   return (
-    <section id='secondSection'>
+    <section
+      style={{ maxWidth: '1200px', margin: '0 auto' }}
+      id='secondSection'
+    >
       <H1>
         Save time and relieve your
         <br /> customer service
@@ -61,17 +79,9 @@ export default function secondSection() {
             <CardInformation key={card.text} primary {...card} />
           ))}
         </div>
-        <div>
-          <Image
-            src={doubleScreen}
-            alt='Double ecran iphone'
-            sizes='50vw'
-            style={{
-              width: 'auto',
-              height: 'auto',
-            }}
-          />
-        </div>
+        <ContainerImage>
+          <Image src={doubleScreen} alt='Double ecran iphone' fill />
+        </ContainerImage>
       </Div>
     </section>
   );
