@@ -17,6 +17,7 @@ const H2 = styled.h2`
   @media screen and (max-width: 900px) {
     font-size: 1.2em;
     padding: 50px 50px 30px 50px;
+    letter-spacing: 0.4px;
   }
 `;
 
@@ -59,6 +60,12 @@ const DivImageResponsive = styled.div`
   width: 400px;
   height: 400px;
 `;
+
+const DivImage = styled.div`
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+`;
 export default function Presentation() {
   return (
     <SectionPresentation>
@@ -76,7 +83,6 @@ export default function Presentation() {
 
       <Image
         src={mockup}
-        priority
         alt='svg dashboard'
         sizes='50vw'
         style={{
