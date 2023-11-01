@@ -44,6 +44,8 @@ function Footer() {
       <FooterContainer id='footer'>
         <H2Footer>iTrack</H2Footer>
         <ButtonShopify />© 2023 - iTrack . All Rights Reserved |<br />
+        <div>CScorp LLC, 5203 Juan Tabo Blvd. NE Suite 2b</div>
+        <div>Albuquerque, New Mexico 87111</div>
         <div>
           Made by{' '}
           <GithubLink
